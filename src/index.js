@@ -8,7 +8,6 @@ const form = document.querySelector('.todo-form');
 form.addEventListener('submit', (e) =>{
     const inputs = PullFromDisplay.download();
     const toDo = Editor.createItem(ToDo, ...inputs);
-    console.log(toDo);
     PushToDisplay.print(toDo);
     e.preventDefault();
     e.target.reset();

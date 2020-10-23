@@ -3,7 +3,12 @@ class PushToDisplay {
     static print(item) {
         const content = document.querySelector('.content');
         const displayElement = document.createElement('div');
-        displayElement.textContent = item.title;
+        
+        for (let key in item) {
+            const p = document.createElement('p');
+            p.textContent = `${key}: ${item[key]}`;
+            displayElement.appendChild(p);
+        }
         content.appendChild(displayElement);
     }
 }
