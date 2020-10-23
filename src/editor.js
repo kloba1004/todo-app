@@ -3,8 +3,8 @@ class Editor {
         return item = null;
     }
 
-    static createItem(item, type, properties) {
-        return item = new type(properties);
+    static createItem(type, ...properties) {
+        return new type(...properties);
     }
 }
 
