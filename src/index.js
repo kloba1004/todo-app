@@ -1,4 +1,3 @@
 import {Project, ToDo, ChecklistItem} from './constructors.js';
 import Editor from './editor.js';
-
-function foo(){}
+import PushToDisplay from './push-to-display.js';

@@ -1,1 +1,0 @@
-(()=>{"use strict";let e={a:1,b:2};console.log(e),e=class{static deleteItem(e){return null}static createItem(e,t,l){return new t(l)}}.deleteItem(e),console.log(e)})();
