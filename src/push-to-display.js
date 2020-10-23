@@ -1,4 +1,3 @@
-
 class PushToDisplay {   
     static print(item) {
         const content = document.querySelector('.content');

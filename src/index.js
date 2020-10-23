@@ -6,14 +6,14 @@ import PullFromDisplay from './pull-from-display.js';
 const forms = document.querySelectorAll('form');
 
 forms.forEach(form => form.addEventListener('submit', (e) =>{
-    const itemType = e.target.className;
-    const inputs = PullFromDisplay.download(`.${itemType}-input`);
-    if (itemType === 'Project') {
-        var item = Editor.createItem(Project, ...inputs);
+    const formType = e.target.className;
+    const inputs = PullFromDisplay.download(`.${formType}-input`);
+    if (formType === 'project') {
+        var newItem = Editor.createItem(Project, ...inputs);
     } else {
-        var item = Editor.createItem(ToDo, ...inputs);
+        var newItem = Editor.createItem(ToDo, ...inputs);
     }
-    PushToDisplay.print(item);
+    PushToDisplay.print(newItem);
 
     e.preventDefault();
     e.target.reset();
