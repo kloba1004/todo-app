@@ -9,12 +9,13 @@ class Project {
 }
 
 class ToDo extends Project {
-    constructor(title, description, dueDate, priority, notes) {
+    constructor(title, description, dueDate, priority, notes, whichProject) {
         super(title);
         this.description = description;
         this.dueDate = dueDate;
         this.priority = priority;
         this.notes = notes;
+        this.whichProject = whichProject;
     }
 
     setDescription(description) {

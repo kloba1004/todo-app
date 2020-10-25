@@ -6,24 +6,30 @@
     <title>ToDo App</title>
 </head>
 <body>
-    <div class="menu"></div>
-    <div class="content">
-        <button>New Project</button>
-        <button>New ToDo</button>
-
+    <div class="forms">
+        <button class="new">New Project</button>
         <form action="" class="project">
             <input class="project-input" type="text"  placeholder="Title">
             <button type="submit" class="submit">Add</button>
         </form>
-
+    
+        <button class="new" id="todo">New ToDo</button>
         <form action="" class="todo">
             <input  class="todo-input" type="text"  placeholder="Title">
             <input  class="todo-input" type="text"  placeholder="Description">
             <input  class="todo-input" type="text"  placeholder="DueDate">
             <input  class="todo-input" type="text"  placeholder="Priority">
             <input  class="todo-input" type="text"  placeholder="Notes">
+            <input  class="todo-input" type="text"  placeholder="Which project?">
             <button type="submit" class="submit">Add</button>
         </form>
+    </div>
+
+    <button class="list-button">Projects</button>
+    <button class="list-button">Todo's</button>
+    <div class="content">
+        <div class="displayItem"><p>Title:</p></div>
+        <div class="displayItem"><p>Title:</p></div>
     </div>
     
     <script src="bundle.js"></script>

@@ -1,3 +1,80 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-size: 10px;
+}
+
+.forms {
+    height: 85vh;
+    width: 20vw;
+    position: fixed;
+    top: 15vh;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo {
+    position: relative;
+    top: 5rem;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+#todo {
+    position: relative;
+    top: 5rem;
+}
+
+input {
+    width: 15rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.list-button {
+    position: relative;
+    top: 25vh;
+    left: 30vw;
+}
+
+.content {
+    width: 50vw;
+    height: 500px;
+    background: yellow;
+    position: relative;
+    top: 30vh;
+    left: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.displayItem {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    padding: 10px;
     background: lightblue;
 }
+

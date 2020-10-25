@@ -1,7 +1,14 @@
+import { Project } from "./constructors";
+
+const projects = [],
+      toDos = [];
+
 class PushToDisplay {   
-    static print(item) {
+    static print(item, itemType) {
+        itemType === 'project' ? projects.push(item) : toDos.push(item);
         const content = document.querySelector('.content');
         const displayElement = document.createElement('div');
+        displayElement.className = 'displayItem';
         
         for (let key in item) {
             const p = document.createElement('p');
@@ -12,4 +19,4 @@ class PushToDisplay {
     }
 }
 
-export default PushToDisplay;
+export {PushToDisplay, projects, toDos};
